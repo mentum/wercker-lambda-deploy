@@ -4,8 +4,8 @@ build:
   steps:
     - script:
         name: upload submodule 1 to AWS Lambda
+        sudo: yes
         code: |
-          echo $(pwd) && ls -la
           ./submodule1/deploy-submodule1.sh
 
     - script:
