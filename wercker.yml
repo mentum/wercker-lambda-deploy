@@ -7,6 +7,7 @@ build:
         sudo: yes
         code: |
           cd submodule1
+          chmod 777 ./deploy-submodule1.sh
           ./deploy-submodule1.sh
           cd ..
 
