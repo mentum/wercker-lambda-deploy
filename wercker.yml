@@ -2,14 +2,13 @@ box: ubuntu
 
 build:
   steps:
-    - shellcheck
-#    - script:
-#        name: upload submodule 1 to AWS Lambda
-#        code: |
-#          cd submodule1
-#          ./deploy-submodule1.sh
-#          cd ..
-#
+    - script:
+        name: upload submodule 1 to AWS Lambda
+        code: |
+          cd submodule1
+          ./deploy-submodule1.sh
+          cd ..
+
 #deploy:
 #  steps:
 #    - script:
