@@ -1,7 +1,5 @@
 box: wercker/ubuntu
 
-services:
-
 build:
   steps:
     - shellcheck
