@@ -1,6 +1,9 @@
-box: wercker/default
+box: default
+
+services:
+
 build:
-  - steps:
+  steps:
     - script:
         name: upload submodule 1 to AWS Lambda
         code: |
@@ -9,7 +12,7 @@ build:
           cd ..
 
 deploy:
-  - steps:
+  steps:
     - script:
         name: upload submodule 2 to AWS Lambda
         code: |
