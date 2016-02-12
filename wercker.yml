@@ -1,7 +1,12 @@
-box: ubuntu
+box: wercker/ubuntu
 
 build:
   steps:
+    - script:
+          name: echo test
+          code: |
+            echo 'lol'
+
     - script:
         name: upload submodule 1 to AWS Lambda
         code: |
