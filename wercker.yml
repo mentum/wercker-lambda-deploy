@@ -5,7 +5,7 @@ build:
     - script:
         name: upload submodule 1 to AWS Lambda
         code: |
-          ./submodule1/deploy-submodule1.sh
+          sudo ./submodule1/deploy-submodule1.sh
 
     - script:
         name: upload submodule 1 to AWS Lambda
