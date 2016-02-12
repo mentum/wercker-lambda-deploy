@@ -1,6 +1,6 @@
 box: wercker/default
 
-deploy:
+build:
   - steps:
     - script:
         name: upload submodule 1 to AWS Lambda
