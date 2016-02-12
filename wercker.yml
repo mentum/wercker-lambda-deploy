@@ -1,0 +1,17 @@
+box: wercker/default
+
+deploy:
+  - steps:
+    - script:
+        name: upload submodule 1 to AWS Lambda
+        code: |
+          cd submodule1
+          ./deploy-submodule1.sh
+          cd ..
+
+    - script:
+        name: upload submodule 2 to AWS Lambda
+        code: |
+          cd submodule2
+          ./deploy-submodule2.sh
+          cd ..

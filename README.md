@@ -1,0 +1,1 @@
+Testing a deploy script for wercker that uploads functions to AWS Lambda.
